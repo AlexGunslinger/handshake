@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @shake.title %>
+</p>
+
+<p>
+  <strong>Shake url:</strong>
+  <iframe width="560" height="315" src="//www.youtube.com/embed/<%= @shake.shake_url %>" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<%= link_to 'Edit', edit_shake_path(@shake) %> |
+<%= link_to 'Back', shakes_path %>
