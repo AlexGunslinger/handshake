@@ -11,11 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140512052644) do
+ActiveRecord::Schema.define(version: 20140823183215) do
 
-  create_table "shakes", force: true do |t|
-    t.string   "title"
-    t.string   "shake_url"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "handshakes", force: true do |t|
+    t.string   "name"
+    t.text     "text"
+    t.string   "handshake_url"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
