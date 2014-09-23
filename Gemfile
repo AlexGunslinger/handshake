@@ -49,4 +49,4 @@ gem 'factory_girl_rails', group: [:development, :test]
 # gem 'debugger', group: [:development, :test]
 
 
-
+gem 'rename'
