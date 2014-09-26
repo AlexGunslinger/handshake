@@ -1,5 +1,6 @@
 class HandshakesController < ApplicationController
   def index
+    @handshake = Handshake.includes(:videos)
   end
 
   def new
